@@ -24,7 +24,7 @@
         colors: {
           primary: '#ABEF5F',
           clifford: '#da373d',
-          bannerbg: '#ffffff',
+          bannerbg: 'bg-gradient-to-r from-cyan-500 to-blue-500',
         },
         fontFamily:{
          Manrope:'Manrope',
@@ -36,7 +36,7 @@
 </head>
 <body>
   <!-- header section start here -->
-  <header>
+  <header class="bg-[#fffafa]">
     <!-- nav-bar -->
      <nav class="w-10/12 mx-auto">
       <div class="navbar p-0 py-4">
@@ -57,9 +57,9 @@
               <button>
                 <i class="fa-solid fa-magnifying-glass text-base rounded-full bg-white"></i>
               </button>
-              <button><i class="fa-solid fa-cart-shopping text-base rounded-full bg-white mr-4"></i></button>
+              <button><i class="fa-solid fa-cart-shopping text-base rounded-full bg-[#ffffff] mr-4"></i></button>
             </div>
-          <a class="btn bg-primary rounded-full px-3 font-bold">Book Consult<i class="fa-solid fa-arrow-right text-base -rotate-45 rounded-full bg-black text-white px-1"></i></a>
+          <a class="btn bg-primary rounded-full px-7  font-bold">Book Consult<i class="fa-solid fa-arrow-right text-base -rotate-45 rounded-full bg-black text-white px-1"></i></a>
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <i class="fa-solid fa-bars visible"></i>
@@ -80,7 +80,23 @@
 
       </nav>
       <!-- banner section start here -->
-        <section></section>
+        <section class="">
+
+          <div class="hero bg-gradient-to-r from-[#fffafa] to-#FFFFFF ">
+            <div class="hero-content text-center">
+              <div class="max-w">
+                  <div class="">
+                    <img class="lg:mx-auto" src="./assets/banner.png" alt="">
+                  </div>
+                <h1 class="font-Manrope font-extrabold text-3xl lg:text-6xl mt-3 lg:px-8">A barn house of this design has a striking appearance</h1>
+                <p class="py-1 mt-2 lg:mt-4 text-base px-4">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal<br>accents,and large windows that flood the space with natural light.
+                </p>
+              <button class="mt-4"><a class="btn bg-[#ABEF5F80] rounded-full px-20 font-bold lg:px-7">View Details<i class="fa-solid fa-arrow-right text-base -rotate-45 rounded-full bg-primary text-black px-17"></i></a></button>
+              </div>
+            </div>
+          </div>
+        </section>
 
   </header>
   
