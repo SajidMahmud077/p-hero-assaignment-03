@@ -24,6 +24,7 @@
         colors: {
           primary: '#ABEF5F',
           clifford: '#da373d',
+          bannerbg: '#ffffff',
         },
         fontFamily:{
          Manrope:'Manrope',
@@ -37,43 +38,49 @@
   <!-- header section start here -->
   <header>
     <!-- nav-bar -->
-     <nav class="w-11/12 mx-auto">
-      <div class="navbar bg-base-100">
+     <nav class="w-10/12 mx-auto">
+      <div class="navbar p-0 py-4">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-            </ul>
-          </div>
-          <a class="btn btn-ghost text-xl"> <i class="fa-solid fa-arrow-right text-xl -rotate-45 rounded-full bg-primary px-1"></i> Rinterio</a>
+          <a class="btn btn-ghost text-2xl font-bold"> <i class="fa-solid fa-arrow-right text-xl -rotate-45 rounded-full bg-primary px-1"></i> Rinterio</a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-          
+          <ul class="menu menu-horizontal px-1 font-semibold text-base text-[#737373]">
+            <li class="text-black"><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+        <div class=" invisible lg:visible navbar-end">
+            <div class="flex items-center gap-7 text-lg text-[#737373]">
+              <button>
+                <i class="fa-solid fa-magnifying-glass text-base rounded-full bg-white"></i>
+              </button>
+              <button><i class="fa-solid fa-cart-shopping text-base rounded-full bg-white mr-4"></i></button>
+            </div>
+          <a class="btn bg-primary rounded-full px-3 font-bold">Book Consult<i class="fa-solid fa-arrow-right text-base -rotate-45 rounded-full bg-black text-white px-1"></i></a>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars visible"></i>
+            </div>
+            <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-2">
+            <li class="text-black"><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+
+          </ul>
+          </div>
         </div>
       </div>
 
       </nav>
+      <!-- banner section start here -->
+        <section></section>
 
   </header>
   
