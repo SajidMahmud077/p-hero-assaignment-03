@@ -33,6 +33,9 @@
       tailwind.config = {
         theme: {
           extend: {
+          backgroundImage: {
+            'connect-image' : "url(./assets/bg.jpg)",
+          },
             colors: {
               primary: "#ABEF5F",
               clifford: "#da373d",
@@ -80,15 +83,15 @@
               </button>
               <button>
                 <i
-                  class="fa-solid fa-cart-shopping text-base rounded-full bg-[#ffffff] mr-4"
-                ></i>
+                  class="fa-solid fa-cart-shopping text-base rounded-full bg-[#ffffff] mr-4">
+              </i>
               </button>
             </div>
             <a class="btn bg-primary rounded-full px-7 font-bold"
               >Book Consult<i
-                class="fa-solid fa-arrow-right text-base -rotate-45 rounded-full bg-black text-white px-1"
-              ></i
-            ></a>
+        class="fa-solid fa-arrow-right text-base -rotate-45 rounded-full bg-black text-white px-1">
+          </i>
+            </a>
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <i class="fa-solid fa-bars visible"></i>
@@ -323,8 +326,41 @@
           </div>
         </div>
       </section>
+      <br>
       <!-- connect section start here -->
-        
+      <section class="border-4 border-[#ffffff]  bg-connect-image bg-no-repeat bg-cover ">
+        <div class="text-center mt-6 lg:mt-16">
+          <button
+          class=" bg-[#ABEF5F33] rounded-full px-2  font-semibold">
+          <i class="fa-solid fa-arrow-right"></i> Let’s Connect
+        </button>
+        </div>
+        <div class="text-center mb-5 lg:mt-4">
+          <h2 class="font-extrabold text-2xl lg:text-4xl mt-4">Let’s Discuss Next Project</h2>
+            <p class="mt-4 px-9">The barn house captivates with its blend of rustic charm and modern sophistication,<br>featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <form>
+          <div class="text-center">
+            <input type="text" placeholder="First Name*" class="px-20 py-3 rounded-full">
+            <input type="text" placeholder="Last Name*" class="px-20 py-3 mb-4 lg:ml-3 mt-4 rounded-full">
+            <br>
+            <input type="number" placeholder="Phone Number*" class="px-20 py-3 rounded-full">
+            <input type="email" placeholder="Email*" class="px-20 py-3 lg:ml-3 mt-4 rounded-full">
+            <br>
+            <br>
+            <textarea name="" id="" cols="45" rows="8" placeholder="   Write your message here" class="ml-1 lg:ml-0 lg:w-[80ch] rounded-xl "></textarea>
+          </div>
+        </form>
+        <div class="text-center mt-4">
+          <a class="btn bg-primary rounded-full px-28 lg:px-72 font-extrabold "
+          >Send Mail<i
+    class="fa-solid fa-arrow-right text-base -rotate-45 rounded-full bg-black text-white px-1">
+      </i>
+        </a>
+        </div>
+        <br>
+      </section>
+      <br>
       
     </main>
 
